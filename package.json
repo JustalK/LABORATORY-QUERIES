@@ -1,14 +1,9 @@
 {
-  "name": "LABORATORY-REDIS",
+  "name": "LABORATORY-QUERIES",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "express": "^4.17.2",
-    "ioredis": "^4.28.3",
-    "node-redis-pubsub": "^5.0.0",
-    "redis": "^4.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {
     "start": "docker-compose up -d --build",
@@ -22,7 +17,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/justalk/LABORATORY-REDIS/issues"
+    "url": "https://github.com/justalk/LABORATORY-QUERIES/issues"
   },
-  "homepage": "https://github.com/justalk/LABORATORY-REDIS#readme"
+  "homepage": "https://github.com/justalk/LABORATORY-QUERIES#readme"
 }

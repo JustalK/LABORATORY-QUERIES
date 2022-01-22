@@ -7,22 +7,22 @@ import {
   ROUTE_RTK
 } from '@constants/routes'
 import Home from '@pages/Home'
-import Axios from '@pages/Axios'
+import TestAxios from '@pages/TestAxios'
+import TestSwr from '@pages/TestSwr'
 import Rtk from '@pages/Rtk'
-import Swr from '@pages/Swr'
 
 export default function App() {
   return (
     <Router>
       <Switch>
         <Route path={ROUTE_AXIOS}>
-          <Axios />
+          <TestAxios />
         </Route>
         <Route path={ROUTE_SWR}>
           <Rtk />
         </Route>
         <Route path={ROUTE_RTK}>
-          <Swr />
+          <TestSwr />
         </Route>
         <Route path={ROUTE_HOME}>
           <Home />

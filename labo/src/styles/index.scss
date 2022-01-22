@@ -66,3 +66,14 @@ span {
   line-height: 1.5;
   font-size: 1.5rem;
 }
+
+.wrapper {
+  display: flex;
+}
+
+.card {
+  background: #e2e2e2;
+  padding: 50px;
+  margin: 10px;
+  text-align: center;
+}
