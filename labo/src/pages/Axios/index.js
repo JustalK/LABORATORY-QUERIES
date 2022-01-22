@@ -1,23 +1,33 @@
 /**
- * The module managing the secondary page
- * @module Secondary
+ * The module managing the call with Axios
+ * @module TestAxios
  */
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import Seo from '@components/Seo'
+import axios from 'axios'
 
 /**
- * @function Secondary
- * Create the component Secondary
- * @return {Object} Return the dom of the Secondary page
+ * @function TestAxios
+ * Create the component for quering information with Axios
+ * @return {Object} Return the dom of the TestAxios page
  */
-const Secondary = () => {
+const TestAxios = () => {
+
+  useEffect(() => {
+    /**
+    axios.get(baseURL).then((response) => {
+      setPost(response.data);
+    });
+    **/
+  })
+
   return (
     <>
-      <Seo title="Secondary" description="Description of Secondary" />
+      <Seo title="Axios" description="Axios test of calling request" />
       Test 2
     </>
   )
 }
 
-export default Secondary
+export default TestAxios
