@@ -5,7 +5,8 @@
 
 import React from 'react'
 import Seo from '@components/Seo'
-import { useGetBackQuery } from '../store/Slices/Slice1'
+import { useGetBackQuery } from '@src/pages/TestRtk/store/Slices/Slice1'
+import Another from './Another'
 
 /**
  * @function Home
@@ -18,7 +19,7 @@ const Children = () => {
 
   return (
     <div className="container">
-      <Seo title="Axios" description="RTK test of calling request" />
+      <Seo title="RTK" description="RTK test of calling request" />
       <h1>RTK call</h1>
       <div className="wrapper">
         {Array.from([result.data, result2.data]).map((d, i) => {
@@ -34,6 +35,7 @@ const Children = () => {
             </div>
           )
         })}
+        <Another />
       </div>
     </div>
   )
