@@ -9,7 +9,7 @@ import {
 import Home from '@pages/Home'
 import TestAxios from '@pages/TestAxios'
 import TestSwr from '@pages/TestSwr'
-import Rtk from '@pages/Rtk'
+import Rtk from '@pages/TestRtk'
 
 export default function App() {
   return (
@@ -19,10 +19,10 @@ export default function App() {
           <TestAxios />
         </Route>
         <Route path={ROUTE_SWR}>
-          <Rtk />
+          <TestSwr />
         </Route>
         <Route path={ROUTE_RTK}>
-          <TestSwr />
+          <Rtk />
         </Route>
         <Route path={ROUTE_HOME}>
           <Home />

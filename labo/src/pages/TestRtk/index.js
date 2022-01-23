@@ -5,19 +5,24 @@
 
 import React from 'react'
 import Seo from '@components/Seo'
+import { Provider } from 'react-redux'
+import store from './store'
+import Children from './Children'
 
 /**
  * @function Secondary
  * Create the component Secondary
  * @return {Object} Return the dom of the Secondary page
  */
-const Secondary = () => {
+const TestRtk = () => {
   return (
     <>
-      <Seo title="Secondary" description="Description of Secondary" />
-      Test 2
+      <Seo title="TestRtk" description="How to use RTK" />
+      <Provider store={store}>
+        <Children />
+      </Provider>
     </>
   )
 }
 
-export default Secondary
+export default TestRtk

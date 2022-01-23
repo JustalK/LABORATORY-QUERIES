@@ -12,9 +12,4 @@ import App from '@src/App'
  * @function render
  * Render the Home component inside the element root of the index page
  */
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-)
+ReactDOM.render(<App />, document.getElementById('root'))
