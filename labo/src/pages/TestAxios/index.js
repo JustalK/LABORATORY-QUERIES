@@ -13,7 +13,7 @@ import Another from '@src/pages/TestAxios/Another'
  * @param {React.dispatch<string>} set The setter from an useState
  * */
 const externalCall = (set) => {
-  axios.get('http://localhost:4000/').then((response) => {
+  axios.get('http://api.server1.net/').then((response) => {
     set(response.data)
   })
 }

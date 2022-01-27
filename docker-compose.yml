@@ -12,11 +12,22 @@ services:
       - "443:443"
     networks:
       kevin-network:
+  back:
+    build: ./back
+    container_name: labo-back
+    environment:
+      - VIRTUAL_HOST=api.server1.net
+      - VIRTUAL_PORT=4000
+    ports:
+      - "4000:4000"
+    depends_on:
+      - nginx
+    networks:
+      kevin-network:
   labo:
     build: ./labo
     container_name: labo-queries
     environment:
-      - REDIS_SERVER_IP=redis-server
       - VIRTUAL_HOST=labo.net
       - VIRTUAL_PORT=3000
     ports:

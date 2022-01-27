@@ -24,7 +24,7 @@ const TestSwr = () => {
   }
 
   const handleClickMutate = () => {
-    mutate('http://localhost:4000/')
+    mutate('http://api.server1.net/')
   }
 
   return (

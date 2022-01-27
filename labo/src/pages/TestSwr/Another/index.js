@@ -14,7 +14,7 @@ const fetcher = (...args) => fetch(...args).then((res) => res.json())
  * @return {Object} Return the dom of the Another component
  */
 const Another = () => {
-  const result = useSWR('http://localhost:4000/', fetcher)
+  const result = useSWR('http://api.server1.net/', fetcher)
 
   if (!result || !result.data) {
     return null
